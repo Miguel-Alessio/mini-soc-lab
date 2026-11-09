@@ -114,7 +114,7 @@ ssh-copy-id <soar-user>@<victim-ip>
 # the engine's user must be able to read the central log
 sudo usermod -aG adm $USER        # log out and back in afterwards
 
-git clone <this-repo> ~/mini-soc-lab && cd ~/mini-soc-lab
+git clone https://github.com/Miguel-Alessio/mini-soc-lab ~/mini-soc-lab && cd ~/mini-soc-lab
 cp configs/config.example.json configs/config.json   # edit IPs, user, whitelist
 ```
 
