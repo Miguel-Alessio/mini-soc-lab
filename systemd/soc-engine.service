@@ -1,0 +1,16 @@
+[Unit]
+Description=Mini-SOC Detection & Response Engine
+After=network-online.target rsyslog.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+# Replace YOUR_USER with the account that owns ~/mini-soc-lab and the SSH key.
+User=YOUR_USER
+WorkingDirectory=%h/mini-soc-lab
+ExecStart=/usr/bin/python3 -u %h/mini-soc-lab/scripts/soc_engine.py -c %h/mini-soc-lab/configs/config.json
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

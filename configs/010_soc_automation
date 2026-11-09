@@ -1,0 +1,3 @@
+# lab-vuln1: /etc/sudoers.d/010_soc_automation  (edit with: sudo visudo -f ...)
+# Lets the SOAR user run iptables without a password - and nothing else.
+pi-vuln ALL=(ALL) NOPASSWD: /usr/sbin/iptables

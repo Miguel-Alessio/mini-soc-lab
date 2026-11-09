@@ -1,0 +1,11 @@
+{
+  "log_file": "/var/log/remote-hosts.log",
+  "target": {
+    "host": "192.0.2.10",
+    "user": "soc-user",
+    "ssh_key": "~/.ssh/id_ed25519"
+  },
+  "whitelist": ["192.0.2.1", "192.0.2.20"],
+  "ssh_bruteforce": { "threshold": 3, "window_seconds": 60 },
+  "response": { "enabled": true, "dry_run": false }
+}

@@ -1,0 +1,14 @@
+# config real (IP-uri, useri) - in repo intra doar config.example.json
+configs/config.json
+CLAUDE.local.md
+
+# loguri si artefacte
+*.log
+__pycache__/
+*.pyc
+.venv/
+
+# chei SSH - nu se urca niciodata
+id_*
+*.pem
+*.key
